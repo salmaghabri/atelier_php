@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules\bootswatch\dist\lux\bootstrap.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <form action="recap.php" method="post" enctype="multipart/form-data">
+        <label for="nom">nom</label>
+        <input class="form-control" type="text" name="nom" id="nom">
+       
+        <label for="prenom">prenom</label>
+        <input class="form-control" type="text" name="prenom" id="prenom">
+      
+        <label for="nb">nombre de sandwichs</label>
+        <input class="form-control" type="number" name="nb" id="nb">
+      
+        <label for="adresse">adresse</label>
+        <textarea class="form-control" name="adresse" id="adresse" cols="30" rows="3"></textarea>
+        
+        <label for="type">type</label>
+        <select class="form-control" name="type" id="type">
+            <option value="poulet">poulet</option>
+            <option value="escalope">escalope</option>
+            <option value="viande">viande</option>
+        </select>
+        
+        <label for="ingredient">ingredient :</label>
+        <label for="harissa">harissa</label>
+        <input  type="radio" name="ingredient"  value="harissa">
+        <label for="salade">salade</label>
+        <input  type="radio" name="ingredient" value="salade">
+        <label for="mayo">mayo</label>
+        <input  type="radio" name="ingredient"  value="mayo">
+<br>
+
+        <label for="cin">cin</label>
+        <input  type="file" name="cin" >
+        
+        
+        <button class="form-control" type="submit">valider</button>
+
+    </form>
+</body>
+</html>
